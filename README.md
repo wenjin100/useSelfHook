@@ -1,2 +1,2 @@
 # useSelfHook
-一款自定义的hook学习项目
+一个自定义的useHook学习项目
