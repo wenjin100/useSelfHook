@@ -1,4 +1,4 @@
-import { HomePage, ContactPage } from './pages';
+import { HomePage, ContactPage, LivedHooks, ExportPage } from './pages';
 // 定义路由类型
 export interface RouteConfig {
   path: string;
@@ -15,6 +15,16 @@ const routes: RouteConfig[] = [
     path: '/',
     component: HomePage,
     name: '介绍',
+  },
+  {
+    path: '/livedHooks',
+    component: LivedHooks,
+    name: '现有hooks',
+  },
+  {
+    path: '/useExportPage',
+    component: ExportPage,
+    name: 'useExportPage',
   },
   {
     path: '/contact',
