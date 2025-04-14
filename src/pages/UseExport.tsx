@@ -1,9 +1,9 @@
 import SyntaxHighlighter from "react-syntax-highlighter";
-import useExportData from "../hooks/useExportData";
+import useData from "../hooks/useData";
 import { useExportCode, useExportDataCode } from "../code/code";
 
 const ExportPage = () => {
-  const { data } = useExportData();
+  const { data } = useData();
   return (
     <div
       style={{
@@ -15,7 +15,7 @@ const ExportPage = () => {
       }}
     >
       <div>
-        <h1>useExportPage</h1>
+        <h1>useData</h1>
         <p>data: {data}</p>
         <br />
         <h3>最简单的使用，直接返回数据</h3>

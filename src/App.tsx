@@ -12,7 +12,7 @@ const App = () => {
         width: '200px',
         backgroundColor: '#f0f0f0',
         padding: '20px',
-        borderRight: '1px solid #ddd'
+        borderRight: '1px solid #ddd',
       }}>
         {routes.map((route) => (
           <Link
