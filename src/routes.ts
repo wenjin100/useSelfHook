@@ -1,4 +1,4 @@
-import { HomePage, ContactPage, LivedHooks, UseExport,UseExportFetch,UseCount} from './pages';
+import { HomePage, ContactPage, LivedHooks, UseExport,UseExportFetch,UseCount,UseStorage} from './pages';
 // 定义路由类型
 export interface RouteConfig {
   path: string;
@@ -35,6 +35,11 @@ const routes: RouteConfig[] = [
     path: '/useCount',
     component: UseCount,
     name: 'useCount',
+  },
+  {
+    path: '/useStorage',
+    component: UseStorage,
+    name: 'useStorage',
   },
   {
     path: '/contact',

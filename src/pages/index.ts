@@ -6,3 +6,4 @@ export const LivedHooks = lazy(() => import('./LivedHooks'));
 export const UseExport = lazy(() => import('./UseExport'));
 export const UseExportFetch = lazy(() => import('./UseFetchData'));
 export const UseCount = lazy(() => import('./UseCount'));
+export const UseStorage = lazy(() => import('./UseStorage'));
