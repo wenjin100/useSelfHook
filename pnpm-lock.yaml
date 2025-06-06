@@ -24,6 +24,9 @@ importers:
       '@eslint/js':
         specifier: ^9.21.0
         version: 9.24.0
+      '@types/node':
+        specifier: ^22.15.30
+        version: 22.15.30
       '@types/react':
         specifier: ^19.0.10
         version: 19.1.0
@@ -35,7 +38,7 @@ importers:
         version: 15.5.13
       '@vitejs/plugin-react-swc':
         specifier: ^3.8.0
-        version: 3.8.1(vite@6.2.5)
+        version: 3.8.1(vite@6.2.5(@types/node@22.15.30))
       eslint:
         specifier: ^9.21.0
         version: 9.24.0
@@ -56,7 +59,7 @@ importers:
         version: 8.29.1(eslint@9.24.0)(typescript@5.7.3)
       vite:
         specifier: ^6.2.0
-        version: 6.2.5
+        version: 6.2.5(@types/node@22.15.30)
 
 packages:
 
@@ -489,6 +492,9 @@ packages:
 
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
+
+  '@types/node@22.15.30':
+    resolution: {integrity: sha512-6Q7lr06bEHdlfplU6YRbgG1SFBdlsfNC4/lX+SkhiTs0cpJkOElmWls8PxDFv4yY/xKb8Y6SO0OmSX4wgqTZbA==}
 
   '@types/react-dom@19.1.2':
     resolution: {integrity: sha512-XGJkWF41Qq305SKWEILa1O8vzhb3aOo3ogBlSmiqNko/WmRb6QIaweuZCXjKygVDXpzXb5wyxKTSOsmkuqj+Qw==}
@@ -1057,6 +1063,9 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
+  undici-types@6.21.0:
+    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
+
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
 
@@ -1393,6 +1402,10 @@ snapshots:
 
   '@types/json-schema@7.0.15': {}
 
+  '@types/node@22.15.30':
+    dependencies:
+      undici-types: 6.21.0
+
   '@types/react-dom@19.1.2(@types/react@19.1.0)':
     dependencies:
       '@types/react': 19.1.0
@@ -1484,10 +1497,10 @@ snapshots:
       '@typescript-eslint/types': 8.29.1
       eslint-visitor-keys: 4.2.0
 
-  '@vitejs/plugin-react-swc@3.8.1(vite@6.2.5)':
+  '@vitejs/plugin-react-swc@3.8.1(vite@6.2.5(@types/node@22.15.30))':
     dependencies:
       '@swc/core': 1.11.18
-      vite: 6.2.5
+      vite: 6.2.5(@types/node@22.15.30)
     transitivePeerDependencies:
       - '@swc/helpers'
 
@@ -2008,16 +2021,19 @@ snapshots:
 
   typescript@5.7.3: {}
 
+  undici-types@6.21.0: {}
+
   uri-js@4.4.1:
     dependencies:
       punycode: 2.3.1
 
-  vite@6.2.5:
+  vite@6.2.5(@types/node@22.15.30):
     dependencies:
       esbuild: 0.25.2
       postcss: 8.5.3
       rollup: 4.39.0
     optionalDependencies:
+      '@types/node': 22.15.30
       fsevents: 2.3.3
 
   which@2.0.2:
